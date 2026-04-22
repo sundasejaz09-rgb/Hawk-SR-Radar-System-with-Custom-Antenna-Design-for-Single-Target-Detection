@@ -1,2 +1,25 @@
-# Hawk-SR-Radar-System-with-Custom-Antenna-Design-for-Single-Target-Detection
-presents the comprehensive design, simulation, and analysis of an SRHawk Pulse-Doppler Radar System with a custom parabolic reflector antenna for avionics applications. Implemented in MATLAB/Simulink using Radar Toolbox and Phased Array System Toolbox, and incorporates complete signal processing including matched filtering, CA-CFAR detection.
+function [waveform, time_axis] = generate_waveform(params)
+
+    fs = params.fs;
+    
+    Tp = params.Tp;
+    
+    B  = params.B;
+
+    % Time vector for one pulse
+    
+    t = (0:1/fs:Tp-1/fs).';
+    
+    time_axis = t;
+
+    % LFM chirp (complex baseband)
+    
+    slope = B / Tp;
+    
+    waveform = exp(1j * pi * slope * t.^2);
+
+    % Normalize to unit energy
+    
+    waveform = waveform / norm(waveform);
+    
+end
