@@ -1,2 +1,7 @@
-# Hawk-SR-Radar-System-with-Custom-Antenna-Design-for-Single-Target-Detection
-presents the comprehensive design, simulation, and analysis of an SRHawk Pulse-Doppler Radar System with a custom parabolic reflector antenna for avionics applications. Implemented in MATLAB/Simulink using Radar Toolbox and Phased Array System Toolbox, and incorporates complete signal processing including matched filtering, CA-CFAR detection.
+Range Profile – shows the compressed pulse peak at the target range.
+
+Range‑Doppler Map – a 2D heatmap with the target visible at (range, Doppler). Red crosses mark CFAR detections.
+
+Antenna Pattern – 3D surface plot of the 30 dBi beam with 3.5° beamwidth.
+
+Tracking Plots – estimated range and velocity over the coherent processing interval, compared with true values.
