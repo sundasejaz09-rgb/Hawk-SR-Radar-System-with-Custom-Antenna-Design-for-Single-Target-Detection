@@ -1,2 +1,1 @@
-# Hawk-SR-Radar-System-with-Custom-Antenna-Design-for-Single-Target-Detection
-presents the comprehensive design, simulation, and analysis of an SRHawk Pulse-Doppler Radar System with a custom parabolic reflector antenna for avionics applications. Implemented in MATLAB/Simulink using Radar Toolbox and Phased Array System Toolbox, and incorporates complete signal processing including matched filtering, CA-CFAR detection.
+results are given
